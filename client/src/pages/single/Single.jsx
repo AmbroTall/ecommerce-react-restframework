@@ -3,8 +3,15 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import Chart from "../../components/chart/Chart";
 import List from "../../components/table/Table";
+import { useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Single = () => {
+
+  const productId = useLocation().pathname.split("/")[2]
+  const id = parseInt(productId)
+  const user = useSelector((state)=> state.user.users.find((user)=>user.id === id))
+  console.log(user)
   
   return (
     <div className="single">
@@ -22,10 +29,10 @@ const Single = () => {
                 className="itemImg"
               />
               <div className="details">
-                <h1 className="itemTitle">Jane Doe</h1>
+                <h1 className="itemTitle">{user.username}</h1>
                 <div className="detailItem">
                   <span className="itemKey">Email:</span>
-                  <span className="itemValue">janedoe@gmail.com</span>
+                  <span className="itemValue">{user.email}</span>
                 </div>
                 <div className="detailItem">
                   <span className="itemKey">Phone:</span>

@@ -11,6 +11,7 @@ const productSlice = createSlice({
         // Get All Products
         productStart: (state)=>{
             state.isFetching=true
+            state.error=false
         },
         productSuccess: (state, action)=>{
             state.isFetching=false
@@ -25,6 +26,7 @@ const productSlice = createSlice({
 
         updateProduct: (state)=>{
             state.isFetching=true
+            state.error=false
         },
         updateProductSuccess: (state, action)=>{
             state.isFetching=false;
@@ -39,6 +41,7 @@ const productSlice = createSlice({
 
         addProduct: (state)=>{
             state.isFetching=true
+            state.error=false
         },
         addProductSuccess: (state, action)=>{
             state.isFetching=false;
@@ -53,6 +56,7 @@ const productSlice = createSlice({
 
         deleteProduct: (state)=>{
             state.isFetching=true
+            state.error=false
         },
         deleteProductSuccess: (state, action)=>{
             state.isFetching=false;

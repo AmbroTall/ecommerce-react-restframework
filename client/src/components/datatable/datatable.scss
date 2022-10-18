@@ -54,6 +54,42 @@
     }
   }
 
+  .color {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.red {
+      background-color: red;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+    }
+    &.orange {
+      background-color: orange;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+    }
+    &.yellow {
+      background-color: yellow;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+    }
+    &.green {
+      background-color: green;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+    }
+    &.blue {
+      background-color: blue;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+    }
+  }
+
   .cellAction {
     display: flex;
     align-items: center;

@@ -1,3 +1,4 @@
+import "./datatable.scss";
 import React,{useEffect} from 'react'
 import { DataGrid } from "@mui/x-data-grid";
 import { Link } from "react-router-dom";
@@ -8,33 +9,33 @@ const ProductDataTable = () => {
     const productColumns = [
         { field: "id", headerName: "ID", width: 70 },
         {
-          field: "name",
+          field: "title",
           headerName: "ProductName",
-          width: 150,
+          width: 200,
           renderCell: (params) => {
             return (
               <div className="cellWithImg">
-                {/* <img className="cellImg" src={params.row.img} alt="avatar" /> */}
-                {params.row.name}
+                <img className="cellImg" src={params.row.img} alt="avatar" />
+                {params.row.title}
               </div>
             );
           },
         },
         {
-          field: "desc",
-          headerName: "Description",
-          width: 230,
-        },
-      
-        {
-          field: "img",
-          headerName: "ProdImg",
+          field: "cat",
+          headerName: "Category",
           width: 100,
+        },
+        {
+          field: "size",
+          headerName: "Sizes available",
+          width: 300,
           renderCell: (params) => {
             return (
-              <div className="cellWithImg">
-                <img className="cellImg" src={params.row.img} alt="avatar" />
-                {/* {params.row.username} */}
+              <div>
+                {params.row.size.map(x=>(
+                  x.size+", "
+                ))}
               </div>
             );
           },
@@ -51,15 +52,42 @@ const ProductDataTable = () => {
         //     );
         //   },
         // },
+
         {
-            field: "created_at",
-            headerName: "Status",
-            width: 160,
+          field: "color",
+          headerName: "Colors available",
+          width: 200,
+          renderCell: (params) => {
+            return (
+              <div style={{display:"flex"}}>
+                {params.row.color.map(x=>(
+                  <div key={x.color_name} className={`color ${x.color_name}`}></div>
+                ))}
+              </div>
+            );
           },
+        },
+        // {
+        //     field: "color",
+        //     headerName: "Color",
+        //     width: 160,
+        // },
+        {
+            field: "price",
+            headerName: "Price",
+            width: 160,
+            renderCell: (params) => {
+              return (
+                <div>
+                  $ {params.row.price}
+                </div>
+              );
+            },
+          },
+        { field: "created_at", headerName: "Created_at", width: 70 },
       ];
     
-
-    const products = useSelector(state=>state.products)
+    const products = useSelector(state=>state.product.products)
     
     const dispatch = useDispatch()
 

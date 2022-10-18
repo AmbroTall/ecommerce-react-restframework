@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4116fdba-e927-48b7-8336-dff91055bf04" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ecommerce/account/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/account/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/commerce/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/commerce/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/commerce/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/commerce/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/commerce/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/commerce/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/commerce/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/commerce/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/commerce/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/commerce/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/commerce/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/commerce/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/ecommerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/ecommerce/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/datatable/ProductDataTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/datatable/ProductDataTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/datatable/datatable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/datatable/datatable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/new/NewProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/new/NewProduct.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/single/SingleProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/single/SingleProduct.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/single/single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/single/single.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/redux/ProductSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/redux/ProductSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/redux/apiCalls.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/redux/apiCalls.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2ALZcIpMc1sZsPwpxoGcLxs6rEH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/ambrose/Desktop/Projects/full stack ecommerce/backend"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4116fdba-e927-48b7-8336-dff91055bf04" name="Changes" comment="" />
+      <created>1654790906582</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654790906582</updated>
+    </task>
+    <servers />
+  </component>
+</project>

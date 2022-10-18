@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
-from rest_framework.generics import UpdateAPIView
+from rest_framework.generics import UpdateAPIView, ListAPIView
 from django.contrib.auth import authenticate
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
@@ -190,3 +190,31 @@ class ChangePasswordView(UpdateAPIView):
 			return Response({"response":"successfully changed password"}, status=status.HTTP_200_OK)
 
 		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class UserListView(ListAPIView):
+    queryset = Account.objects.all()
+    serializer_class =  AccountPropertiesSerializer
+    # authentication_classes = ([])
+    permission_classes = ([])
+
+# Delete View
+@api_view(['DELETE',])
+@permission_classes([])
+# @authentication_classes((TokenAuthentication))
+def user_api_view_delete(request, pk=None):
+    try:
+        user = Account.objects.get(id=pk)
+    except Account.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+    if request.method == 'DELETE':
+        operation = user.delete()
+        data = {}
+
+        if operation:
+            data['success'] = 'Successfully deleted order'
+        else:
+            data['failure'] = 'Delete failed'
+
+        return Response(data=data)

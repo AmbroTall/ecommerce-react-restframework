@@ -42,10 +42,26 @@ INSTALLED_APPS = [
     'rest_framework',
     'commerce',
     "corsheaders",
+    'rest_framework.authtoken',
     'account'
 ]
 
 AUTH_USER_MODEL = 'account.Account'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.AllowAny',
+        'rest_framework.permissions.IsAdminUser',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+
+    # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    # 'PAGE_SIZE': 10,
+}
 
 CORS_ALLOW_ALL_ORIGINS=True
 

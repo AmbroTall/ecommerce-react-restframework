@@ -1,8 +1,8 @@
 // Combine Reducer is used to persist two or more reducers
-import {configureStore} from '@reduxjs/toolkit'
-// import {configureStore, combineReducers} from '@reduxjs/toolkit'
+// import {configureStore} from '@reduxjs/toolkit'
+import {configureStore, combineReducers} from '@reduxjs/toolkit'
 import productReducer from './ProductSlice'
-// import userLogin from './userLogin'
+import userSlice from './userSlice'
 
 
 
@@ -25,9 +25,9 @@ const persistConfig = {
     storage,
 }
 
-// const rootReducer = combineReducers({user: userLogin, cart: cartReducer})
+const rootReducer = combineReducers({user: userSlice, product: productReducer})
   
-const persistedReducer = persistReducer(persistConfig, productReducer)
+const persistedReducer = persistReducer(persistConfig, rootReducer)
   
 
 

@@ -6,6 +6,8 @@ from .views import(
 	update_account_view,
 	does_account_exist_view,
 	ChangePasswordView,
+	UserListView,
+	user_api_view_delete,
 )
 from rest_framework.authtoken.views import obtain_auth_token
 
@@ -18,5 +20,6 @@ urlpatterns = [
 	path('properties/update/', update_account_view, name="update"),
  	path('login/', ObtainAuthTokenView.as_view(), name="login"),
 	path('register/', registration_view, name="register"),
-
+	path('all-users/', UserListView.as_view(), name="all_users"),
+	path('delete_user/<int:pk>/', user_api_view_delete, name="delete_user"),
 ]
